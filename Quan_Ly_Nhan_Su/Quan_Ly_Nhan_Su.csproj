@@ -45,14 +45,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\NhanVienControl.cs" />
+    <Compile Include="ExtendModel\DataProvider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmChinh.designer.cs">
+      <DependentUpon>frmChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Sua\frmSuaNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Sua\frmSuaNV.designer.cs">
+      <DependentUpon>frmSuaNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Them\frmThemNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Them\frmThemNV.designer.cs">
+      <DependentUpon>frmThemNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UC\ucNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UC\ucNhanVien.designer.cs">
+      <DependentUpon>ucNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\PhongBan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmChinh.resx">
+      <DependentUpon>frmChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Sua\frmSuaNV.resx">
+      <DependentUpon>frmSuaNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Them\frmThemNV.resx">
+      <DependentUpon>frmThemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UC\ucNhanVien.resx">
+      <DependentUpon>ucNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +117,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI\ChiTiet\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
