@@ -34,7 +34,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.btnHocSinh = new System.Windows.Forms.Button();
+            this.btnPhongBan = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.pnlNoiDung = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -56,7 +56,7 @@
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.btnHocSinh);
+            this.groupBox1.Controls.Add(this.btnPhongBan);
             this.groupBox1.Controls.Add(this.btnNhanVien);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -102,15 +102,15 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // btnHocSinh
+            // btnPhongBan
             // 
-            this.btnHocSinh.Location = new System.Drawing.Point(3, 90);
-            this.btnHocSinh.Name = "btnHocSinh";
-            this.btnHocSinh.Size = new System.Drawing.Size(197, 43);
-            this.btnHocSinh.TabIndex = 0;
-            this.btnHocSinh.Text = "Học Sinh";
-            this.btnHocSinh.UseVisualStyleBackColor = true;
-            this.btnHocSinh.Click += new System.EventHandler(this.btnHocSinh_Click);
+            this.btnPhongBan.Location = new System.Drawing.Point(3, 90);
+            this.btnPhongBan.Name = "btnPhongBan";
+            this.btnPhongBan.Size = new System.Drawing.Size(197, 43);
+            this.btnPhongBan.TabIndex = 0;
+            this.btnPhongBan.Text = "Phòng Ban";
+            this.btnPhongBan.UseVisualStyleBackColor = true;
+            this.btnPhongBan.Click += new System.EventHandler(this.btnPhongBan_Click);
             // 
             // btnNhanVien
             // 
@@ -154,7 +154,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnHocSinh;
+        private System.Windows.Forms.Button btnPhongBan;
         private System.Windows.Forms.Button btnNhanVien;
         private System.Windows.Forms.Panel pnlNoiDung;
     }

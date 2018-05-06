@@ -42,15 +42,13 @@ namespace Quan_Ly_Nhan_Su.GUI
 
         }
 
-        private void btnHocSinh_Click(object sender, EventArgs e)
+        private void btnPhongBan_Click(object sender, EventArgs e)
         {
-            //pnlNoiDung.Controls.Clear();
-            //ucHocSinh frm = new ucHocSinh();
-            //frm.Size = new Size(pnlNoiDung.Width, pnlNoiDung.Height);
-            //frm.Visible = true;
-            //pnlNoiDung.Controls.Add(frm);
+            pnlNoiDung.Controls.Clear();
+            ucPhongBan frm = new ucPhongBan();
+            frm.Size = new Size(pnlNoiDung.Width, pnlNoiDung.Height);
+            frm.Visible = true;
+            pnlNoiDung.Controls.Add(frm);
         }
-
-        
     }
 }
