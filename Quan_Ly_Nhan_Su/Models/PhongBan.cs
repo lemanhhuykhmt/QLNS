@@ -10,7 +10,7 @@ namespace Quan_Ly_Nhan_Su.Models
     {
         public int MaPB { get; set; }
         public string TenPB { get; set; }
-        public NhanVien TruongPhong { get; set; }
+        public int TruongPhong { get; set; }
         public string ViTri { get; set; }
     }
 }

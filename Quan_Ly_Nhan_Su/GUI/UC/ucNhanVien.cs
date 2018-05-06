@@ -11,11 +11,11 @@ using Quan_Ly_Nhan_Su.Controls;
 using Quan_Ly_Nhan_Su.GUI.Them;
 using Quan_Ly_Nhan_Su.GUI.Sua;
 
-namespace QuanLyHocSinh.GUI.UC
+namespace Quan_Ly_Nhan_Su.GUI.UC
 {
-    public partial class ucGiaoVien : UserControl
+    public partial class ucNhanVien : UserControl
     {
-        public ucGiaoVien()
+        public ucNhanVien()
         {
             InitializeComponent();
             loadDuLieu();
@@ -27,10 +27,7 @@ namespace QuanLyHocSinh.GUI.UC
             for (int i = 0; i < dt.Rows.Count; ++i)
             {
                 string date = String.Format("{0:dd/MM/yyyy}", dt.Rows[i][2]);
-                double luong = double.Parse(dt.Rows[i][5].ToString()) * 1000000;
-
-                dgvDanhSach.Rows.Add(new object[] { false, dt.Rows[i][0], dt.Rows[i][1], date, dt.Rows[i][3], dt.Rows[i][4], luong.ToString("#0,000,000") });
-
+                dgvDanhSach.Rows.Add(new object[] { false, dt.Rows[i][0], dt.Rows[i][1], date, dt.Rows[i][3], dt.Rows[i][4], dt.Rows[i][5], dt.Rows[i][6] });
             }
         }
         private void btnNhap_Click(object sender, EventArgs e)
@@ -77,10 +74,7 @@ namespace QuanLyHocSinh.GUI.UC
             for (int i = 0; i < dt.Rows.Count; ++i)
             {
                 string date = String.Format("{0:dd/MM/yyyy}", dt.Rows[i][2]);
-                double luong = double.Parse(dt.Rows[i][5].ToString()) * 1000000;
-
-                dgvDanhSach.Rows.Add(new object[] { false, dt.Rows[i][0], dt.Rows[i][1], date, dt.Rows[i][3], dt.Rows[i][4], luong.ToString("#0,000,000") });
-
+                dgvDanhSach.Rows.Add(new object[] { false, dt.Rows[i][0], dt.Rows[i][1], date, dt.Rows[i][3], dt.Rows[i][4], dt.Rows[i][5], dt.Rows[i][6] });
             }
         }
         private void dgvDanhSach_CellContentClick(object sender, DataGridViewCellEventArgs e)

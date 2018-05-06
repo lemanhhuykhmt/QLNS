@@ -1,6 +1,6 @@
-﻿namespace QuanLyHocSinh.GUI.UC
+﻿namespace Quan_Ly_Nhan_Su.GUI.UC
 {
-    partial class ucGiaoVien
+    partial class ucNhanVien
     {
         /// <summary> 
         /// Required designer variable.
@@ -150,7 +150,7 @@
             // 
             // colTen
             // 
-            this.colTen.FillWeight = 150F;
+            this.colTen.FillWeight = 130F;
             this.colTen.HeaderText = "Tên Nhân Viên";
             this.colTen.Name = "colTen";
             // 
@@ -178,13 +178,13 @@
             // 
             // colLuong
             // 
-            this.colLuong.FillWeight = 90F;
+            this.colLuong.FillWeight = 50F;
             this.colLuong.HeaderText = "Lương";
             this.colLuong.Name = "colLuong";
             // 
             // colChiTiet
             // 
-            this.colChiTiet.FillWeight = 15F;
+            this.colChiTiet.FillWeight = 20F;
             this.colChiTiet.HeaderText = "";
             this.colChiTiet.Name = "colChiTiet";
             this.colChiTiet.Text = "...";
@@ -192,7 +192,7 @@
             // 
             // colSua
             // 
-            this.colSua.FillWeight = 15F;
+            this.colSua.FillWeight = 20F;
             this.colSua.HeaderText = "";
             this.colSua.Name = "colSua";
             this.colSua.Text = "i";
@@ -200,19 +200,19 @@
             // 
             // colXoa
             // 
-            this.colXoa.FillWeight = 15F;
+            this.colXoa.FillWeight = 20F;
             this.colXoa.HeaderText = "";
             this.colXoa.Name = "colXoa";
             this.colXoa.Text = "x";
             this.colXoa.UseColumnTextForButtonValue = true;
             // 
-            // ucGiaoVien
+            // ucNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "ucGiaoVien";
+            this.Name = "ucNhanVien";
             this.Size = new System.Drawing.Size(932, 537);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

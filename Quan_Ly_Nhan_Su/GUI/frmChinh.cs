@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Quan_Ly_Nhan_Su.GUI.UC;
 
 namespace Quan_Ly_Nhan_Su.GUI
 {
@@ -33,12 +34,12 @@ namespace Quan_Ly_Nhan_Su.GUI
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
-            //pnlNoiDung.Controls.Clear();
-            //ucGiaoVien frm = new ucGiaoVien();
-            //frm.Size = new Size(pnlNoiDung.Width, pnlNoiDung.Height);
-            //frm.Visible = true;
-            //pnlNoiDung.Controls.Add(frm);
-            
+            pnlNoiDung.Controls.Clear();
+            ucNhanVien frm = new ucNhanVien();
+            frm.Size = new Size(pnlNoiDung.Width, pnlNoiDung.Height);
+            frm.Visible = true;
+            pnlNoiDung.Controls.Add(frm);
+
         }
 
         private void btnHocSinh_Click(object sender, EventArgs e)

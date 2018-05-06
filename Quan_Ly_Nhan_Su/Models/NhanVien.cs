@@ -12,7 +12,8 @@ namespace Quan_Ly_Nhan_Su.Models
         public string TenNV { get; set; }
         public DateTime NgaySinh { get; set; }
         public string GioiTinh { get; set; }
-        public NhanVien NQL { get; set; }
-        public PhongBan Phong { get; set; }
+        public int NQL { get; set; }
+        public int Phong { get; set; }
+        public double Luong { get; set; }
     }
 }
