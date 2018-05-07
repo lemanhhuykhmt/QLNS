@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Quan_Ly_Nhan_Su.Controls;
 using Quan_Ly_Nhan_Su.GUI.Them;
 using Quan_Ly_Nhan_Su.GUI.Sua;
+using Quan_Ly_Nhan_Su.GUI.ChiTiet;
 
 namespace Quan_Ly_Nhan_Su.GUI.UC
 {
@@ -99,8 +100,8 @@ namespace Quan_Ly_Nhan_Su.GUI.UC
             }
             else if (e.ColumnIndex == dgvDanhSach.Columns["colChiTiet"].Index)
             {
-                //frmDiemHS frm = new frmDiemHS(id);
-                //frm.ShowDialog();
+                frmChiTietPB f = new frmChiTietPB(id);
+                f.ShowDialog();
             }
         }
 

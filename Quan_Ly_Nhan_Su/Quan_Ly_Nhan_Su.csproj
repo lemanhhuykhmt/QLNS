@@ -54,6 +54,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\ChiTiet\frmChiTietPB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ChiTiet\frmChiTietPB.Designer.cs">
+      <DependentUpon>frmChiTietPB.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChiTiet\frmChiTietPB.resx">
+      <DependentUpon>frmChiTietPB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,8 +155,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI\ChiTiet\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

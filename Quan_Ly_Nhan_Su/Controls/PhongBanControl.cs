@@ -76,5 +76,10 @@ namespace Quan_Ly_Nhan_Su.Controls
             string query = "select * from NhanVien where MaNV = @ma";
             return DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
+        public static DataTable layDanhSachNhanVien(int idPB) // lấy danh sách nv trong phòng ban
+        {
+            string query = "select * from NhanVien where Phong = @maphong";
+            return DataProvider.Instance.ExecuteQuery(query, new object[] { idPB });
+        }
     }
 }
