@@ -89,17 +89,22 @@ namespace Quan_Ly_Nhan_Su.GUI.UC
             }
             else if (e.ColumnIndex == dgvDanhSach.Columns["colXoa"].Index)
             {
-                int ketQua = NhanVienControl.xoaThongTin(id);
-                if (ketQua <= 0)
+                //Hiển thị hộp thoại xóa sinh viên
+                DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn xóa sinh viên này?", "Xóa sinh viên", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (DialogResult.Yes == dr)
                 {
-                    MessageBox.Show("Thực hiện thất bại");
-                }
-                else
-                {
-                    loadDuLieu();
+                    int ketQua = NhanVienControl.xoaThongTin(id);
+                    if (ketQua <= 0)
+                    {
+                        MessageBox.Show("Thực hiện thất bại");
+                    }
+                    else
+                    {
+                        loadDuLieu();
+                    }
                 }
             }
-            else if(e.ColumnIndex == dgvDanhSach.Columns["colChiTiet"].Index)
+            else if (e.ColumnIndex == dgvDanhSach.Columns["colChiTiet"].Index)
             {
                 //
             }

@@ -88,15 +88,20 @@ namespace Quan_Ly_Nhan_Su.GUI.UC
             }
             else if (e.ColumnIndex == dgvDanhSach.Columns["colXoa"].Index)
             {
-                int ketQua = PhongBanControl.xoaThongTin(id);
-                if (ketQua <= 0)
+                DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn xóa phòng ban này?", "Xóa phòng ban", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (DialogResult.Yes == dr)
                 {
-                    MessageBox.Show("Thực hiện thất bại");
+                    int ketQua = PhongBanControl.xoaThongTin(id);
+                    if (ketQua <= 0)
+                    {
+                        MessageBox.Show("Thực hiện thất bại");
+                    }
+                    else
+                    {
+                        loadDuLieu();
+                    }
                 }
-                else
-                {
-                    loadDuLieu();
-                }
+             
             }
             else if (e.ColumnIndex == dgvDanhSach.Columns["colChiTiet"].Index)
             {
