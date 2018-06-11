@@ -25,14 +25,14 @@ namespace Quan_Ly_Nhan_Su.Controls
             string query = "exec thempb @ten , @truong , @vitri";
             return DataProvider.Instance.ExecuteNonQuery(query, new object[] { ten, truongphong, vitri });
         }
-        public static DataTable layDanhSach() 
+        public static DataTable layDanhSach()
         {
-            string query = "select pb.MaPB, pb.TenPB, nv.TenNV, pb.ViTri " 
+            string query = "select pb.MaPB, pb.TenPB, nv.TenNV, pb.ViTri "
                 + " from PhongBan as pb left join NhanVien as nv on pb.TruongPB = nv.MaNV";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query);
             return dt;
         }
-        public static DataTable layThongTin(int id) 
+        public static DataTable layThongTin(int id)
         {
             string query = "select pb.MaPB, pb.TenPB, nv.TenNV, pb.ViTri "
                 + " from PhongBan as pb left join NhanVien as nv on pb.TruongPB = nv.MaNV where pb.MaPB = @ma";
@@ -60,8 +60,8 @@ namespace Quan_Ly_Nhan_Su.Controls
         }
         public static DataTable layDanhSachNhanVien()
         {
-            string query = "select nv.MaNV, nv.TenNV, nv.NgaySinh, nv.GioiTinh, nv.Phong, nv.NQL, nv.Luong " 
-                + " from NhanVien as nv, (select MaNV from NhanVien except select TruongPB from PhongBan) as b " 
+            string query = "select nv.MaNV, nv.TenNV, nv.NgaySinh, nv.GioiTinh, nv.Phong, nv.NQL, nv.Luong "
+                + " from NhanVien as nv, (select MaNV from NhanVien except select TruongPB from PhongBan) as b "
                 + " where nv.MaNV = b.MaNV";
             return DataProvider.Instance.ExecuteQuery(query);
         }
